@@ -1,0 +1,15 @@
+propel:
+    _attributes: { package: plugins.cgtTelemetryPlugin.lib.model }
+
+    cgt_telemetryview:
+        _attributes: { phpName: CgtTelemetry, idMethod: native }
+        _uniques:    { UNIQ_cgt_telemetryview_name: [name]     }
+
+        id:          { phpName: Id,        type: INTEGER,                  required: true, primaryKey: true, autoIncrement: true }
+        name:        { phpName: Name,      type: VARCHAR,     size: '255', required: true  }
+        sql:         { phpName: Sql,       type: LONGVARCHAR,              required: true  }
+        active:      { phpName: Active,    type: BOOLEAN,                  required: true, defaultValue: true}
+        created_by:  { phpName: CreatedBy, type: VARCHAR,     size: '255', required: false }
+        updated_by:  { phpName: UpdatedBy, type: VARCHAR,     size: '255', required: false }
+        created_at:  { phpName: CreatedAt, type: TIMESTAMP,                required: true  }
+        updated_at:  { phpName: UpdatedAt, type: TIMESTAMP,                required: true  }

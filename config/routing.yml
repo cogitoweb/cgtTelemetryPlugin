@@ -1,0 +1,9 @@
+cgt_telemetry_list:
+    url:          /telemetry/list
+    param:        { module: cgtTelemetry, action: list, sf_format: json }
+    requirements: { sf_method: [ get ] }
+
+cgt_telemetry_export:
+    url:          /telemetry/:id/export
+    param:        { module: cgtTelemetry, action: export, sf_format: json }
+    requirements: { id: \d+, sf_method: [ get ] }
