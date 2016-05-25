@@ -3,7 +3,7 @@ class cgtTelemetryActions extends sfActions
 {
 	/**
 	 * 
-	 * @var string
+	 * @var array
 	 */
 	protected $forbiddenWords = array('CREATE', 'DELETE', 'DROP', 'INSERT', 'TRUNCATE', 'UPDATE');
 
@@ -11,8 +11,6 @@ class cgtTelemetryActions extends sfActions
 	 * List available telemetry views
 	 * 
 	 * @param  sfWebRequest $request
-	 * 
-	 * @return string
 	 */
 	public function executeList(sfWebRequest $request)
 	{
@@ -37,7 +35,7 @@ class cgtTelemetryActions extends sfActions
 	 * 
 	 * @param  sfWebRequest $request
 	 * 
-	 * @return string
+	 * @return null
 	 * 
 	 * @throws RuntimeException
 	 */
