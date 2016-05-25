@@ -10,7 +10,7 @@ Installation
   * Install the plugin
 
         $ cd plugins/
-		$ git clone https://github.com/cogitoweb/TemplateBundle.git
+		$ git clone https://github.com/cogitoweb/cgtTelemetryPlugin.git
 
   * Enable the plugin
 
