@@ -1,8 +1,8 @@
 cgtTelemetryPlugin
 ==================
 
-The `cgtTelemetryPlugin` is a symfony plugin that provides the data
-necessary to CogitoTelemetry appplication to build statistics.
+The `cgtTelemetryPlugin` is a symfony 1.4 plugin that provides the data
+necessary to CogitowebTelemetryBundle to build statistics.
 
 Installation
 ------------
