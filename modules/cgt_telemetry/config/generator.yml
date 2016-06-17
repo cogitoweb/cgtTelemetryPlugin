@@ -1,0 +1,32 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           cgtTelemetry
+    theme:                 cri
+    non_verbose_templates: true
+    with_show:             false
+    singular:              cgtTelemetry
+    plural:                cgtTelemetrys
+    route_prefix:          cgt_telemetry
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          name:
+              label: Nome
+          sql:
+              label: Query
+          active:
+              label: Attiva
+      list:    
+          title: Elenco viste
+          display: [ name, sql, active]
+      filter:  
+          display: [ name, active]
+      form:    ~
+      edit:    
+          title: Modifica vista
+      new:     
+          title: Nuova vista

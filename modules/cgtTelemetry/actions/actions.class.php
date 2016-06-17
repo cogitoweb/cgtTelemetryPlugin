@@ -5,7 +5,7 @@ class cgtTelemetryActions extends sfActions
 	 * 
 	 * @var array
 	 */
-	protected $forbiddenWords = array('CREATE', 'DELETE', 'DROP', 'INSERT', 'TRUNCATE', 'UPDATE');
+	protected $forbiddenWords = array('CREATE ', 'DELETE ', 'DROP ', 'INSERT ', 'TRUNCATE ', 'UPDATE ');
 
 	/**
 	 * List available telemetry views
