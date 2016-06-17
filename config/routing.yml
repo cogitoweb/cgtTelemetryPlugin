@@ -7,3 +7,13 @@ cgt_telemetry_export:
     url:          /telemetry/:id/export
     param:        { module: cgtTelemetry, action: export, sf_format: json }
     requirements: { id: \d+, sf_method: [ get ] }
+    
+cgt_telemetry:
+  class: sfPropelORMRouteCollection
+  options:
+    model:                cgtTelemetry
+    module:               cgt_telemetry
+    prefix_path:          /telemetry/admin
+    column:               id
+    with_wildcard_routes: true
+
