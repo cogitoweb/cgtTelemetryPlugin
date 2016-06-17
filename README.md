@@ -9,19 +9,12 @@ Installation
 
   * Install the plugin
 
-        $ cd plugins/
+    $ cd plugins/
 		$ git clone https://github.com/cogitoweb/cgtTelemetryPlugin.git
 
   * Enable the plugin
 
         Add "cgtTelemetryPlugin" in "config/ProjectConfiguration.class.php".
-
-  * Rebuild your model
-
-        $ symfony propel:build-model
-        $ symfony propel:build-sql
-        $ symfony propel:build-forms
-        $ symfony propel:build-filters
 
   * Update your database
 
@@ -32,7 +25,7 @@ Installation
         [php]
             all:
               .settings:
-                enabled_modules:      [..., "cgtTelemetry"]
+                enabled_modules:      [..., 'cgtTelemetry', 'cgt_telemetry']
 
   * Clear cache
 
